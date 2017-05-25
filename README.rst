@@ -42,7 +42,7 @@ The methods in this module are used to filter the constructed
 co-occurence network. We implement a permutation test that evaluates
 and removes edges (pathway-pathway relationships) in the network
 that cannot be distinguished from a null model of random associations.
-The null model is created by generating _N_ permutations of the network.
+The null model is created by generating *N* permutations of the network.
 
 Acknowledgements
 ----------------
