@@ -131,6 +131,7 @@ def _significant_pathways_dataframe(pvalue_information,
     """
     significant_pathways = pd.concat(
         [pvalue_information, side_information], axis=1)
+    # fdr_bh: false discovery rate, Benjamini & Hochberg (1995, 2000)
     below_alpha, qvalues, _, _ = multipletests(
         significant_pathways["p-value"], alpha=alpha, method="fdr_bh")
     below_alpha = pd.Series(

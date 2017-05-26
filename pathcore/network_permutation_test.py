@@ -96,7 +96,7 @@ def network_edges_permutation_test(observed_network,
         pvalues.append(pvalue)
         edge_expected_weight.append((edge_id, _edge_expected_weight(
             weight_distribution[1:])))
-
+    # fdr_bh: false discovery rate, Benjamini & Hochberg (1995, 2000)
     below_alpha, qvalues, _, _ = multipletests(
         pvalues, alpha=alpha, method="fdr_bh")
 
