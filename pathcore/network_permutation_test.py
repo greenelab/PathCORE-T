@@ -62,7 +62,8 @@ def network_edges_permutation_test(observed_network,
       `network.py`)
     permuted_networks : list(CoNetwork)
       the list of N permuted networks generated from the original observed
-      network
+      CoNetwork by calling its `permute_pathways_across_features` function
+      N times and collecting the output in a list.
     alpha : float
       specify the threshold for significance testing
     n_networks : int (default=1)
