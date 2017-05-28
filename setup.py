@@ -1,17 +1,16 @@
 import os
 from setuptools import setup
 
-setup_dir = os.path.dirname(os.path.abspath(__file__))
 
-with open(os.path.join(setup_dir, "README.rst")) as readme:
+with open(os.path.join(os.path.dirname(__file__), "README.rst")) as readme:
     long_description = readme.read()
 
 # Allow setup.py to be run from any path
-os.chdir(os.path.normpath(os.path.join(setup_dir, os.pardir)))
+os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name="PathCORE",
-    version="1.0.0",
+    version="1.0.1",
     packages=["pathcore"],
     include_package_data=True,
     license="BSD-3-Clause",
