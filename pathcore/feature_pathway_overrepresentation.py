@@ -7,6 +7,11 @@ from scipy import stats
 from statsmodels.sandbox.stats.multicomp import multipletests
 
 
+# handle the floating point errors thrown in the Fisher's exact test
+# manually.
+np.seterr(all="raise")
+
+
 def pathway_enrichment_with_overlap_correction(feature_weight_vector,
                                                pathway_definitions,
                                                gene_signature_definition,
