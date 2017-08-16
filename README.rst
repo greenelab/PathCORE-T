@@ -41,7 +41,7 @@ The methods in this module are used to identify the pathways
 overrepresented in features extracted from a transcriptomic dataset
 of genes-by-samples. Features must preserve the genes in the dataset
 and assign weights to these genes based on some distribution.
-(`feature_pathway_overrepresentation documentation. <http://pathcore-demo.herokuapp.com/static/data/docs_pathcore/source/pathcore.html#module-pathcore.feature_pathway_overrepresentation>`_)
+[`feature_pathway_overrepresentation documentation. <http://pathcore-demo.herokuapp.com/static/data/docs_pathcore/source/pathcore.html#module-pathcore.feature_pathway_overrepresentation>`_]
 
 ===========
 network.py
