@@ -10,7 +10,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name="PathCORE",
-    version="1.0.1",
+    version="1.0.2",
     packages=["pathcore"],
     include_package_data=True,
     license="BSD-3-Clause",
