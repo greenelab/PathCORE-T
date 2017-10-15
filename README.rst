@@ -1,7 +1,7 @@
-PathCORE
---------
+PathCORE-T
+----------
 Python 3 implementation of methods described in
-`Chen et al.'s 2017 PathCORE paper <https://doi.org/10.1101/147645>`_ for
+`Chen et al.'s 2017 PathCORE-T paper <https://doi.org/10.1101/147645>`_ for
 identifying pathway-pathway interactions using features constructed from
 transcriptomic data.
 
@@ -9,26 +9,30 @@ This code has been tested on Python 3.5.
 The documentation for the modules in the package can be
 `accessed here <http://pathcore-demo.herokuapp.com/static/data/docs_pathcore/index.html>`_.
 
+Note that this software was renamed from PathCORE to PathCORE-T in Oct 2017.
+However, the module itself is still named `pathcore` to maintain backwards
+compatibility for users of the original PathCORE software package. 
+
 Installation
 ----------------
 To install the current PyPI version (recommended), run::
 
-    pip install PathCORE
+    pip install PathCORE-T
 
 For the latest GitHub version, run::
 
-    pip install git+https://github.com/greenelab/PathCORE.git#egg=PathCORE
+    pip install git+https://github.com/greenelab/PathCORE-T.git#egg=PathCORE-T
 
 Examples
 ---------
-We recommend that users of the PathCORE software begin by reviewing the
-examples in the `PathCORE-analysis <https://github.com/greenelab/PathCORE-analysis>`_
+We recommend that users of the PathCORE-T software begin by reviewing the
+examples in the `PathCORE-T-analysis <https://github.com/greenelab/PathCORE-T-analysis>`_
 repository. The analysis repository contains shell scripts and wrapper
 analysis scripts that demonstrate how to run the methods in this package
 on features constructed from a broad compendium according to the 
-`workflow we describe in our paper <https://github.com/greenelab/PathCORE-analysis#the-pathcore-analysis-workflow>`_.
+`workflow we describe in our paper <https://github.com/greenelab/PathCORE-T-analysis#the-pathcore-analysis-workflow>`_.
 
-Specifically, `this Jupyter notebook <https://github.com/greenelab/PathCORE-analysis/blob/master/jupyter-notebooks/Supplemental_PAO1_FastICA_example.ipynb>`_
+Specifically, `this Jupyter notebook <https://github.com/greenelab/PathCORE-T-analysis/blob/master/jupyter-notebooks/Supplemental_PAO1_FastICA_example.ipynb>`_
 is a simple example of the workflow and a great place to start.
 
 Package contents
