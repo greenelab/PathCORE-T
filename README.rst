@@ -1,17 +1,17 @@
 PathCORE-T
 ----------
 Python 3 implementation of methods described in
-`Chen et al.'s 2017 PathCORE-T paper <https://doi.org/10.1101/147645>`_ for
-identifying pathway-pathway interactions using features constructed from
-transcriptomic data.
+`Chen et al.'s 2017 PathCORE-T paper <https://doi.org/10.1101/147645>`_.
+
+Note that this software was renamed from PathCORE to PathCORE-T in Oct 2017.
+The T specifies that pathway co-occurrence relationships are identified using
+features extracted from **transcriptomic** data. 
+The module itself is still named `pathcore` to maintain backwards
+compatibility for users of the original PathCORE software package. 
 
 This code has been tested on Python 3.5.
 The documentation for the modules in the package can be
 `accessed here <http://pathcore-demo.herokuapp.com/static/data/docs_pathcore/index.html>`_.
-
-Note that this software was renamed from PathCORE to PathCORE-T in Oct 2017.
-However, the module itself is still named `pathcore` to maintain backwards
-compatibility for users of the original PathCORE software package. 
 
 Installation
 ----------------
