@@ -9,14 +9,14 @@ with open(os.path.join(os.path.dirname(__file__), "README.rst")) as readme:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name="PathCORE",
+    name="PathCORE-T",
     version="1.0.2",
     packages=["pathcore"],
     include_package_data=True,
     license="BSD-3-Clause",
-    description="Python 3 implementation of PathCORE analysis methods",
+    description="Python 3 implementation of PathCORE-T analysis methods",
     long_description=long_description,
-    url="https://github.com/greenelab/PathCORE",
+    url="https://github.com/greenelab/PathCORE-T",
     author="Greene Lab",
     author_email="team@greenelab.com",
     classifiers=[

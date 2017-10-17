@@ -1,5 +1,5 @@
 """CoNetwork is the data structure that supports the pathway co-occurrence
-network produced by the PathCORE software.
+network produced by the PathCORE-T software.
 
 The classes Vertex and Edge are used in CoNetwork.
 """
@@ -89,10 +89,10 @@ class CoNetwork:
         - str: the path to a significant pathways file, which is then
             loaded into a pandas.DataFrame. Must be tab-separated
             and contain columns "feature," "pathway," and "side."
-        - pandas.DataFrame: the PathCORE analysis produces a significant
+        - pandas.DataFrame: the PathCORE-T analysis produces a significant
             pathways pandas.DataFrame that a user can directly pass
             to the CoNetwork constructor as well.
-        - None: Use the method `read_network_file` to load a PathCORE
+        - None: Use the method `read_network_file` to load a PathCORE-T
             network file as a CoNetwork object after a CoNetwork object
             has been initialized with
             CoNetwork(model_n_features, significant_pathways=None, ...).
@@ -178,7 +178,7 @@ class CoNetwork:
         """Build the network from a dictionary of (side -> tuple lists),
         where the side is specified as "pos" and/or "neg" (from the feature
         gene signature(s)) and mapped to a tuple list of [(pathway, feature)].
-        Used during the PathCORE permutation test by applying the method
+        Used during the PathCORE-T permutation test by applying the method
         `permute_pathways_across_features` to an existing CoNetwork.
         """
         for side, pathway_feature_tuples in significant_pathways.items():

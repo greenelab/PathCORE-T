@@ -51,7 +51,7 @@ def pathway_enrichment_with_overlap_correction(feature_weight_vector,
       the set of remaining genes.
     metadata : bool (default=False)
       Gather information to store in a MongoDB-backed Flask web application.
-      Users can interact with the PathCORE-produced network and analyze the
+      Users can interact with the PathCORE-T-produced network and analyze the
       genes underlying a pair of pathways linked in the network.
 
     Returns
